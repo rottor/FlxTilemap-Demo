@@ -93,8 +93,8 @@ class PlayState extends FlxState
         add(resetBtn);
 
         quitBtn = new FlxButton(FlxG.width - resetBtn.width - 4, FlxG.height - 24, "Quit"
-            , function() { FlxG.fade(0xff000000, 0.22, true,
-                            function() { FlxG.switchState(new MenuState());} );
+            , function() { FlxG.fade( 0xff000000, 0.22, false
+                            , function() { FlxG.switchState(new MenuState());} );
             } );
         add(quitBtn);
 
